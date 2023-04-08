@@ -13,16 +13,16 @@ composer require nazares/phpdotenv
 `.env` file
 
 ```dotenv
-DB_HOST=localhost
-DB_NAME=test
-DB_PASSWORD=secret
+DB_HOST =localhost
+DB_NAME = test
+DB_PASSWORD= secret
 ```
 
 ```php
 $dotenv = new \nazares\dotenv\Dotenv($path);
 $dotenv->load();
 
-echo getenv('DB_HOST'); // localhosr
+echo getenv('DB_HOST'); // localhost
 echo $_ENV['DB_NAME']; // test
 echo $_SERVER['DB_PASSWORD']; // secret
 ```
@@ -32,7 +32,7 @@ or
 ```php
 (new \nazares\dotenv\Dotenv($path))->load();
 
-echo getenv('DB_HOST'); // localhosr
+echo getenv('DB_HOST'); // localhost
 echo $_ENV['DB_NAME']; // test
 echo $_SERVER['DB_PASSWORD']; // secret
 ```
