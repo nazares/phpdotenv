@@ -8,5 +8,10 @@
             "email": "nazares@icloud.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "nazares\\phpdotenv\\" : "."
+        }
+    },
     "require": {}
 }
