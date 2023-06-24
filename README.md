@@ -19,7 +19,7 @@ DB_PASSWORD= secret
 ```
 
 ```php
-$dotenv = new \nazares\dotenv\Dotenv($path);
+$dotenv = new \nazares\phpdotenv\Dotenv($path);
 $dotenv->load();
 
 echo getenv('DB_HOST'); // localhost
@@ -30,7 +30,7 @@ echo $_SERVER['DB_PASSWORD']; // secret
 or
 
 ```php
-(new \nazares\dotenv\Dotenv($path))->load();
+(new \nazares\phpdotenv\Dotenv($path))->load();
 
 echo getenv('DB_HOST'); // localhost
 echo $_ENV['DB_NAME']; // test
